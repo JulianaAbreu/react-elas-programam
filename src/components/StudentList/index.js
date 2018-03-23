@@ -22,7 +22,10 @@ class StudentList extends Component {
           <tbody>
             {students.map( (student, index) => (
               <StudentRow
-                {...student}
+                nome={student.nome}
+                matricula={student.matricula}
+                serie={student.serie}
+                rg={student.rg}
                 key={student.rg}
                 index={index} 
                 deleteByIndex={deleteByIndex} 
