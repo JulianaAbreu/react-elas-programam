@@ -51,7 +51,7 @@ class StudentForm extends Component {
             <label>RG</label>
             <input type="text" name="rg" value={rg} onChange={this.onChange} />
           </div>
-          <button className="btn">Cadastrar</button>
+            <button className="btn">Cadastrar</button>
         </form>
       </div>
     );

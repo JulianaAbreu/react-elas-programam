@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import StudentRow from '../StudentRow';
 import './style.css';
 
+
 class StudentList extends Component {
+
   render() {
     const {students, deleteByIndex} = this.props; 
     return (
@@ -17,7 +20,15 @@ class StudentList extends Component {
             </tr>
           </thead>
           <tbody>
-            {students.map( (student, index) => <StudentRow key={student.rg} index={index} {...student} deleteByIndex={deleteByIndex} />)}
+            {students.map( (student, index) => (
+              <StudentRow
+                {...student}
+                key={student.rg}
+                index={index} 
+                deleteByIndex={deleteByIndex} 
+              />
+              )
+            )}
           </tbody>
         </table>
       </div>
