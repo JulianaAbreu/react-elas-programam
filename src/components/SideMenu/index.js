@@ -30,8 +30,6 @@ class SideMenu extends React.Component {
     ]
   };
 
-
- 
   render() {
     const { itemsMenu } = this.state;
 
