@@ -51,7 +51,7 @@ class StudentForm extends React.Component {
             <label>RG</label>
             <input type="text" name="rg" value={rg} onChange={this.onChange} />
           </div>
-            <button className="btn">Cadastrar</button>
+            <button className="btn-add">Cadastrar</button>
         </form>
       </div>
     );

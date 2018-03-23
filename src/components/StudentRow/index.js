@@ -15,7 +15,7 @@ class StudentRow extends React.Component {
         <td>{this.props.serie}</td>
         <td>{this.props.rg}</td>
         <td>
-          <button onClick={this.onClick}>×</button>
+          <button onClick={this.onClick} className="btn-remove">×</button>
         </td>
       </tr>
     );

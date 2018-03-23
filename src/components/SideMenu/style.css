@@ -1,0 +1,41 @@
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #cecece;
+    z-index: auto;
+}
+.ic-option {
+    font-size: 26px;
+}
+.name-option {
+    font-size: 16px;
+}
+.menu-left {
+    background-color: white;
+    box-shadow: 5px 0px 10px rgba(0,0,0,0.5);;
+    -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    border-top: none;
+    width: 110px;
+    height: 100vH;
+}
+.logo {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #1db3c7;
+    padding-bottom: 20px;
+}
+.side-menu:hover {
+    color: #1db3c7;
+    cursor: pointer;
+    border-right: 3px solid #1db3c7;
+}
+.side-menu:active {
+    color: #1db3c7;
+    cursor: pointer;
+    border-right: 3px solid #1db3c7;
+}
