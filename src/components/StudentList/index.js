@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React from 'react';
 import StudentRow from '../StudentRow';
 import './style.css';
 
 
-class StudentList extends Component {
+class StudentList extends React.Component {
 
   render() {
     const {students, deleteByIndex} = this.props; 
@@ -20,7 +19,7 @@ class StudentList extends Component {
             </tr>
           </thead>
           <tbody>
-            {students.map( (student, index) => (
+            {students.map((student, index) => (
               <StudentRow
                 nome={student.nome}
                 matricula={student.matricula}

@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
 
-class StudentRow extends Component {
+class StudentRow extends React.Component {
   onClick = (ev) => {
       const { deleteByIndex } = this.props;
       ev.preventDefault();

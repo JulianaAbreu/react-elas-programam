@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios';
-import logo from './logo.svg';
 import StudentForm from '../StudentForm/index.js';
 import StudentList from '../StudentList/index.js';
 import './App.css';
 
 const API = 'https://private-785c05-learnit.apiary-mock.com';
 
-class App extends Component {
+class App extends React.Component {
   state = {
     students: [
       {
@@ -18,6 +17,10 @@ class App extends Component {
       }
     ]
   };
+
+  componentDidMount(){
+    this.listStudents();
+  }
 
   listStudents = () => {
     axios
@@ -47,12 +50,11 @@ class App extends Component {
   render() {
     const { students } = this.state;
     const { addStudent, deleteByIndex } = this;
-    console.log( this.listStudents());
   
     return (
       <div className="App">
         <div className="container">
-          <h1>Gerenciador de Estudantes</h1>
+          <h1>Estudantes</h1>
           <StudentForm addStudent={addStudent} />
           <StudentList deleteByIndex={deleteByIndex} students={students} />
         </div>

@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
 
-class StudentForm extends Component {
+class StudentForm extends React.Component {
   state = {
     student: {
       nome: '',
