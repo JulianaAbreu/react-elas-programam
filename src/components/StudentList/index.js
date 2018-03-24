@@ -6,7 +6,6 @@ import './style.css';
 class StudentList extends React.Component {
 
   render() {
-    const {students, deleteByIndex} = this.props; 
     return (
       <div className="card StudentList">
         <table>
@@ -19,18 +18,10 @@ class StudentList extends React.Component {
             </tr>
           </thead>
           <tbody>
-            {students.map((student, index) => (
               <StudentRow
-                nome={student.nome}
-                matricula={student.matricula}
-                serie={student.serie}
-                rg={student.rg}
-                key={student.rg}
-                index={index} 
-                deleteByIndex={deleteByIndex} 
+                
               />
-              )
-            )}
+            
           </tbody>
         </table>
       </div>
